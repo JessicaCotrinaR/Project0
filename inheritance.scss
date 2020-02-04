@@ -1,0 +1,53 @@
+$color: blue;
+$padding: 20px;
+$margin-right: auto;
+ul {
+	font-size: 14px;
+	color: $color;
+}
+
+ol {
+	font-size: 18px;
+	color: $color;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: $margin-right;
+    width: 20%;
+    height: 300%;
+ }
+.grid {
+	display: grid;
+	padding: $padding;
+	grid-column-gap:5px; 
+	grid-row-gap:5px; 
+	grid-template-columns:auto auto auto auto auto; 
+	
+}
+.grid-item {
+	background-color: white;
+	font-size: 10px;
+	text-align: center;            
+}
+
+h3{
+    padding: $padding;
+    margin: auto;
+    border: auto;
+    text-align: justify; 
+}
+
+.row {
+    display: flex;
+    margin-right: $margin-right;
+    width: 80%;
+      
+}
+
+.column {
+    flex: 33.33%;
+    padding: $padding;
+  
+}

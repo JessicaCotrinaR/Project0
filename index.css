@@ -1,0 +1,75 @@
+<style>
+   
+   .aligncenter {
+    text-align: center;
+    }
+   .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        height: 300%;
+    }
+    .grid {
+		display: grid;
+		padding: 20px;
+		grid-column-gap:5px; /*the espace between individual colums of the grid*/
+		grid-row-gap:5px; /*the espace between individual row of the grid*/
+		grid-template-columns:auto auto auto auto auto; /*allows me to specify how wide(amplio) i want each column to be*/
+		/*those the first column 200px the second column 200 px and the thrid column should be automatically generated */
+	}
+	.grid-item {
+		background-color: white;
+		font-size: 10px;
+		text-align: center;            
+	}
+	p {
+		padding: 35px;
+        margin: auto;
+        border: auto;
+        text-align: justify; 
+        
+
+	}/*allow to change style depending how narrow a particular webpage is*/
+
+    .introduction {
+        padding: 30px;
+        margin: auto;
+        border: auto;
+        text-align: justify; 
+        color:#0F5EE9;
+    }
+
+    h3{
+        padding: 10px;
+        margin: auto;
+        border: auto;
+        text-align: justify; 
+    }
+
+
+    .row {
+        display: flex;
+        margin-right: auto;
+        width: 80%;
+          
+    }
+
+    .column {
+        flex: 33.33%;
+        padding: 35px;
+      
+    }
+
+
+    @media (min-width: 520px){
+        body {
+            background-color: white; /*this mans that lightcolor only apply when the view of my window is at least 500px*/
+        }
+    }
+    @media (max-width: 519px){
+        body{
+            background-color: #739CEA;  /*make it not visible*/
+        }
+    }
+</style>

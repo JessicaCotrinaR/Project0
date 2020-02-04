@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Java Script's World</title>
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    	
+    	<style type="text/css">
+    		h1 {
+    			font-family: Arial, sans-serif;
+    			/*background-color: red;*/
+    			text-align: center;
+    			color: #0066ff;
+    		}
+    		.center {
+    			display: block;
+  				margin-left: auto;
+  				margin-right: auto;
+  				width: 20%;
+  				height: 300px;
+    		}
+
+    		.grid {
+						
+				display: grid;
+				padding: 20px;
+				grid-column-gap:10px; /*the espace between individual colums of the grid*/
+				grid-row-gap:10px; /*the espace between individual row of the grid*/
+				grid-template-columns:auto auto auto auto auto; /*allows me to specify how wide(amplio) i want each column to be*/
+				/*those the first column 200px the second column 200 px and the thrid column should be automatically generated */
+
+			}
+			.grid-item {
+				background-color: white;
+				font-size: 10px;
+				text-align: center;
+
+			}
+
+			 p{
+			 	padding: 50px;
+			 }
+    	</style>
+        
+    </head>
+    <body>
+    	<img src="image0.jpg" class="center">
+    	<h1> Java Script's Advantages </h1>
+
+    	<div class="grid">
+
+             <div class="grid-item"> 
+                <a class="btn btn-primary" href="index.html" role="button"> Home</a>
+             </div>
+
+			 <div class="grid-item"> 
+				<a class="btn btn-primary" href="concept.html" role="button"> Introduction</a>
+			 </div>
+
+			 <div class="grid-item"> 
+				<a class="btn btn-primary" href="example.html" role="button"> Syntax </a> 
+			 </div>
+
+			 <div class="grid-item"> 
+				<a class="btn btn-primary" href="questions.html" role="button">Questions</a>
+			  </div>
+
+            <div class="grid-item"> 
+                <a class="btn btn-primary" href="development.html" role="button" style="background-color:#719DE1">Advantages</a>
+            </div>
+		</div>
+    	
+        <div class="container">
+            <h6>The merits of using JavaScript are: </h6>
+            <div class="alert alert-primary" role="alert">
+              Less server interaction − You can validate user input before sending the page off to the server. This saves server traffic, which means less load on your server.
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              Immediate feedback to the visitors − They don't have to wait for a page reload to see if they have forgotten to enter something.
+            </div>
+            <div class="alert alert-success" role="alert">
+              Increased interactivity − You can create interfaces that react when the user hovers over them with a mouse or activates them via the keyboard.
+            </div>
+            <div class="alert alert-danger" role="alert">
+              Richer interfaces − You can use JavaScript to include such items as drag-and-drop components and sliders to give a Rich Interface to your site visitors.
+            </div>
+          
+        </div>    
+    </body>
+</html>

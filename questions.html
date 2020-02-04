@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Java Script's World</title>
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    	
+    	<style type="text/css">
+    		h1 {
+    			font-family: Arial, sans-serif;
+    			/*background-color: red;*/
+    			text-align: center;
+    			color: #0066ff;
+    		}
+    		.center {
+    			display: block;
+  				margin-left: auto;
+  				margin-right: auto;
+  				width: 20%;
+  				height: 300px;
+    		}
+
+    		.grid {
+						
+				display: grid;
+				padding: 20px;
+				grid-column-gap:10px; /*the espace between individual colums of the grid*/
+				grid-row-gap:10px; /*the espace between individual row of the grid*/
+				grid-template-columns:auto auto auto auto auto; /*allows me to specify how wide(amplio) i want each column to be*/
+				/*those the first column 200px the second column 200 px and the thrid column should be automatically generated */
+
+			}
+			.grid-item {
+				background-color: white;
+				font-size: 10px;
+				text-align: center;
+
+              
+			}
+            .form-group{
+                padding: 15px;
+
+            }
+
+            h6{
+                padding: 5px;
+                margin: auto;
+            }
+
+            button{
+                height:40px; 
+                width:100px; 
+                margin: -20px -50px; 
+                position:relative;
+                top:50%; 
+                left:50%;
+            }
+           
+
+    	</style>
+        
+    </head>
+    <body>
+    	<img src="image0.jpg" class="center">
+    	<h1> Questions about Java Script </h1>
+
+    	<div class="grid">
+
+			 <div class="grid-item"> 
+				<a class="btn btn-primary" href="index.html" role="button"> Home</a>
+			 </div>
+
+              <div class="grid-item"> 
+                <a class="btn btn-primary" href="concept.html" role="button"> Introduction</a>
+             </div>
+			 <div class="grid-item"> 
+				<a class="btn btn-primary" href="example.html" role="button"> Syntax </a> 
+			 </div>
+
+			 <div class="grid-item"> 
+				<a class="btn btn-primary" href="questions.html" role="button" style="background-color:#719DE1">Questions</a>
+			  </div>
+
+            <div class="grid-item"> 
+                <a class="btn btn-primary" href="development.html" role="button">Advantages</a>
+            </div>
+		</div>
+    	
+    <div class="container">
+    	<h6> You can send your questions about Java Script Here:</h6>
+
+        <form>
+        <div class="form-group">
+
+            <label for="formGroupExampleInput">Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+            <label for="formGroupExampleInput">Last Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Last Name">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
+            <label for="exampleFormControlSelect1">Select how important is your question. Scale: 1 urgent - 5 not urgent</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <label for="exampleFormControlTextarea1">Write your question</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success" padding="15px">Submit</button>
+        </form>
+    </div>
+        
+    </body>
+</html>
